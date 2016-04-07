@@ -1,0 +1,328 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                               LaTeX TEMPLATE FOR ECOC 2015, VALENCIA, SPAIN
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTES FOR USE:
+%
+% This template is meant to be used with PDF-LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------------------------------------------- Documentclass --------------------------------------------------%
+
+\documentclass[a4paper, oneside, twocolumn, notitlepage, 10pt]{style/extarticle_ecoc2015}
+\usepackage{style/ecoc2015}
+
+%---------------------------------------------- Begin Document ------------------------------------------------%
+\begin{document}
+\selectlanguage{american}    % Standard Language
+
+%-------------------------------------------------- Title -----------------------------------------------------%
+
+\title{Title: Please Capitalize the First Letter of Each Principal Word\\(Except "and", "of", "the", etc.)}
+
+%------------------------------------------------- Authors-----------------------------------------------------%
+
+\author{
+    Author\textsuperscript{(1)}, Author\textsuperscript{(1)},
+    Author\textsuperscript{(2)}, Author\textsuperscript{(3)}
+}
+
+\maketitle                  % Create title and author
+
+%------------------------------------------ Description of Authors ----------------------------------------------%
+
+\begin{strip}
+ \begin{author_descr}
+
+   \textsuperscript{(1)} Author's full affiliation,
+   \uline{author@authors-institution.org} (Email of corresponding author mandatory)
+
+   \textsuperscript{(2)} Author's full affiliation,
+   \uline{author@authors-institution.org} (Email of other authors optional)
+
+   \textsuperscript{(3)} Author's full affiliation,
+   \uline{author@authors-institution.org} (Email of other authors optional)
+
+ \end{author_descr}
+\end{strip}
+
+\setstretch{1.1}
+
+%-------------------------------------------------- Abstract ---------------------------------------------------------%
+
+\begin{strip}
+  \begin{ecoc_abstract}
+    % NOTE: Don't use a blank line here but start abstract right away to avoid an extra line break
+    Your 40 words abstract, which will appear in the conference program, should be an explicit summary of the paper that states the problem, the methods used as well as the major results and conclusions. It should be complementary to rather than a repeat of the title.
+  \end{ecoc_abstract}
+\end{strip}
+
+%-------------------------------------------------- Section 1 -------------------------------------------------------%
+
+\section{Introduction}
+Sections should not be numbered unless absolutely necessary. There are several stylistic options pre-defined in this template for you to use. As long as you stay within the paper formatting guidelines, you are welcome to supplement these options with those of your choice. The pre-defined options are discussed in the following sections.
+
+%-------------------------------------------------- Section 2 -------------------------------------------------------%
+
+\section{Enumerations}
+Avoid enumerations as much as possible. Prefer full sentences. Should you decide for one anyhow, here are examples for lists:
+\begin{itemize}
+\item A bullet list including things like this,
+\item or this,
+\item or even this.
+\end{itemize}
+Of course, you can also use an enumeration instead
+\begin{enumerate}
+\item like this,
+\item or this,
+\item or even this.
+\end{enumerate}
+
+%-------------------------------------------------- Section 3 -------------------------------------------------------%
+
+\section{Citing prior work}
+References appear in the text as superscripts like this\cite{ref1}, this\cite{ref1,ref2} or this\cite{ref1}$^-$\cite{ref3}. This saves some space, which can come in handy on a 3-page paper.
+
+%-------------------------------------------------- Section 4 -------------------------------------------------------%
+
+\section{Figures}
+
+All fonts used within figures (axes labels, descriptions, etc.) must appear at least at 7pt in the final figure size. The resolution of the figures must be high enough to be easily readable when printed. The paper must be able to print clearly on standard black-and-white printers. Most reviewers will not view your paper in colour. Colour versions of your figures will only be available in the soft-copies of the proceedings.
+You may use either single-column figures like Fig.~\ref{fig:figure1} or double-column figures like Fig.~\ref{fig:figure2}. Please leave sufficient space between figures and text. We recommend placement of figures on either the top or the bottom of a page to save space. In any case, the figure caption should appear beneath the figure in 8pt font.
+
+\begin{figure}[tp]%[htdp]
+   \centering
+%         \includegraphics[width=40mm]{figures/fig1}
+    \caption{A typical figure caption}
+    \label{fig:figure1}
+\end{figure}
+
+%-------------------------------------------------- Section 5 -------------------------------------------------------%
+
+\section{Tables}
+
+Like figures, tables can be single-column, such as
+Tab.~\ref{tab:table1}, or double-column, such as
+Tab.~\ref{tab:table2}. You are free to format the
+tables to best fit your needs.
+
+\begin{table}[htdp]
+   \centering
+\caption{A typical table caption} \label{tab:table1}
+\begin{tabular}{|c|c|c|}
+         \hline  \multicolumn{3}{|c|}{Entry}  \\
+         \hline  Entry  & Entry & Entry\\
+         \hline  Entry  & Entry & Entry\\
+         \hline  Entry  & Entry & Entry\\
+         \hline
+\end{tabular}
+\end{table}%
+
+%-------------------------------------------------- Section 6 -------------------------------------------------------%
+\section{Equations}
+A typical equation should look like this. 
+\begin{equation}\label{eq:eq1}
+BER=\frac{1}{\sqrt{2\pi}}\int\limits_{Q}^{+\infty}\exp{\left(-\frac{x^2}{2}\right)}\,\mathrm{d}x
+\end{equation}
+
+When mentioned in the core of the text, all variables should appear as they appear in the equations. In Eq.~(\ref{eq:eq1}), we derive the relationship between $BER$ and $Q$. 
+
+%-------------------------------------------------- Section 7 -------------------------------------------------------%
+
+\section{Filling the template}
+
+{\it This section only contains random text to fill up the
+template.}
+
+
+\begin{figure*}
+   \centering
+%         \includegraphics[width=140mm]{figures/fig2}
+    \caption{This is a typical figure caption}
+    \label{fig:figure2}
+\end{figure*}
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie.
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+
+\begin{table*}
+   \centering
+\caption{This is a typical table caption}
+\label{tab:table2}%
+      \begin{tabular}{|l|r|r|c|c|c|c|c|r|r|}
+         \hline  \multicolumn{2}{|c|}{Entry}  &  \multicolumn{7}{|c|}{Entry} \\
+         \hline  \multicolumn{2}{|c|}{ }  &  \multicolumn{2}{|c|}{Entry}  &  \multicolumn{3}{|c|}{Entry}  &  \multicolumn{2}{|c|}{ }  \\
+         \multicolumn{2}{|c|}{ }  &  \multicolumn{2}{|c|}{Entry}  &  \multicolumn{3}{|c|}{Entry}  &  \multicolumn{2}{|c|}{Entry} \\
+         \hline Entry  &  Entry   &   Entry &  Entry   &  Entry  &  Entry  &  Entry  &  \multicolumn{2}{|c|}{Entry} \\
+         \hline Entry  &  Entry  &  Entry &  Entry  &  Entry  &  Entry   & Entry  &  \multicolumn{2}{|c|}{Entry} \\
+         \hline  Entry    &   Entry    &  Entry    &  Entry   &   Entry    &   Entry  &      Entry  &    Entry   &  Entry      \\
+         \hline  Entry  &   Entry  &  Entry  &  Entry      &  Entry    &   Entry   &     Entry  &   Entry   &  Entry  \\
+         \hline
+      \end{tabular}
+\end{table*}
+
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+Lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+iriure dolor in hendrerit in vulpu tate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
+et accumsan et iusto odimet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Lobortis nisl ut aliquip ex ea commodo consequat. Duis
+autem vel eum iriure dolor in hendrerit in vulpu tate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+magna aliquam erat volutpat.quat. Duis autem vel eum iriure dolor in
+hendrerit in vulpu tate velit esse molestie consequat, vel illum
+dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+odio dignissim qui blandit praesent luptatum zzril delenit augue
+duis dolore te feugait nulla facilisi.
+
+%-------------------------------------------------- Section 8 -------------------------------------------------------%
+
+\section{Conclusions}
+
+Good luck with your submission!
+
+%-------------------------------------------------- Section 9 -------------------------------------------------------%
+
+\section{Acknowledgements}
+
+We wish to thank all of you for submitting a paper to ECOC 2015.
+
+%-------------------------------------------------- Literature -------------------------------------------------------%
+
+\bibliographystyle{abbrv}
+\begin{spacing}{1.35}
+\begin{thebibliography}{1}
+\bibitem{ref1}
+F. M. Lastname et al., ``\uline{Full Paper Titles are Mandatory for Adequate Referencing in Web Search Engines},'' J. Lightwave Technol., Vol. {\bf 12}, no. 5, p. 456 (1990).
+\bibitem{ref2}
+F. M. Lastname et al., ``Why Should we Use Photonics?,'' Proc. OFC, WeA3, Anaheim (2005).
+\bibitem{ref3}
+F. M. Lastname et al., ``Connecting the Dots,'' Proc. ECOC, Tu.9.G.1, London (2005).
+\bibitem{ref4}
+F. M. Lastname et al., ``Why Connect the Dots?,'' Photon. Technol. Lett., Vol. {\bf 12}, no. 3, p. 34 (2001).
+\bibitem{ref5}
+F. M. Lastname et al., ``The Dots are Connected,'' Proc. OFC, PDP41, San Diego (2010).
+\bibitem{ref6}
+F. M. Lastname, How to Write a Paper, Publishing Company (2002). 
+\end{thebibliography}
+\end{spacing}
+\vspace{-4mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------- End of Document -----------------------------------------------%
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
